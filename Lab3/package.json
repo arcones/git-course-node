@@ -3,16 +3,9 @@
   "version": "0.0.1",
   "description": "A calculator in javascript",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Marta Arcones",
   "license": "ISC",
   "dependencies": {
     "commander": "^12.1.0"
-  },
-  "bin": {
-    "calculator": "./index.js"
-  },
-  "type": "module"
+  }
 }
