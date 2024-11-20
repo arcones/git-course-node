@@ -29,11 +29,29 @@
 1. **`git merge feature/addition`**
     1. [Docs](https://git-scm.com/docs/git-merge)
     1. Mention the fast forward
-1. 
-
-
-
-
-
-
-1. `git branch -d 
+    1. Mention this can be done between any couple of branches (not only master)
+1. Repeat last 8 points for subtract operation:
+    1. `git switch -c feature/subtraction`
+    1. Write iteration 2 with calculator (addition)
+    1. Test it with `node calculator.js xxx`
+    1. In the feature branch `git status` + `git add.. ` + `git diff --staged` + `git commit -m "Add calculator with addition operation"` + `git status` + `git log`
+    1. `git switch main`
+    1. `git merge feature/addition`
+        1. Emphasize the fast forward, this is because base branch has not conflicting changes
+1. *Slides for conflict explanation*
+1. Create a conflict on purpose:
+    1. `git switch -c feature/multiplication`
+    1. Write iteration 2 with calculator (addition) + Change how results are displayed in every operation
+    1. Test it with `node calculator.js xxx`
+    1. In the feature branch `git status` + `git add.. ` + `git diff --staged` + `git commit -m "Add calculator with addition operation"` + `git status` + `git log`
+    1. **`git switch -`**
+    1. [BEFORE THE MERGE] To do a slight change in `main` like changing how the result of the operations appear
+    1. In `main`branch: `git status` + `git commit -am "Add calculator with addition operation"` + `git log`
+    1. Conflict! Do `git status` and fix it manually in master
+    1. `git commit -am "Fix merge conflict"`
+    1. `git status`
+    1. `git log` will show:
+        1. Commits from all branches
+        1. And merge commit
+1. **`git branch -d xxx`** to remove the branches not needed anymore
+1. `git tag xxx`
