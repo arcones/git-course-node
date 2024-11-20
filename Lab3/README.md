@@ -44,6 +44,7 @@
     1. Write iteration 2 with calculator (addition) + Change how results are displayed in every operation
     1. Test it with `node calculator.js xxx`
     1. In the feature branch `git status` + `git add.. ` + `git diff --staged` + `git commit -m "Add calculator with addition operation"` + `git status` + `git log`
+            1. Mention commit message short
     1. **`git switch -`**
     1. [BEFORE THE MERGE] To do a slight change in `main` like changing how the result of the operations appear
     1. In `main`branch: `git status` + `git commit -am "Add calculator with addition operation"` + `git log`
@@ -53,5 +54,31 @@
     1. `git log` will show:
         1. Commits from all branches
         1. And merge commit
+1. Create another conflict on purpose and fix it the other way around:
+    1. `git switch -c feature/division`
+    1. Write iteration 2 with calculator (addition) + Change how results are displayed in every operation
+    1. Test it with `node calculator.js xxx`
+    1. In the feature branch `git status` + `git add.. ` + `git diff --staged` + `git commit -m "Add division operation"` + `git status` + `git log`
+    1. **`git switch -`**
+    1. [BEFORE THE MERGE] To do a slight change in `main` like changing how the result of the operations appear
+    1. In `main`branch: `git status` + `git commit -am "Enhance output"` + `git log`
+    1. `git merge main` and fix the conflict in the feature branch
+    1. Conflict! Do `git status` and fix it manually in feature branch
+    1. `git commit -am "Get latest main changes"`
+    1. `git status`
+    1. `git log` will show:
+        1. Commits from all branches
+        1. And merge commit
+    1. `git switch -` and go back to main
+    1. *Ask if there will be conflicts now* -> There will not be
+    1. `git merge feature/division`
+1. What can we do to prevent conflicts:
+    1. Commit atommicity
+    1. Frequent merges
+    1. Short living branches
 1. **`git branch -d xxx`** to remove the branches not needed anymore
+1. Mention briefly branch naming
+    1. main or master or trunk
+    1. feature branches
+    1. bugfix branches
 1. `git tag xxx`
