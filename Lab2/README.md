@@ -1,5 +1,7 @@
 # Lab2
 
+> Same folder as lab1
+
 ## Commit hashes
 1. Long version in `git log`
 1. Short version, i.e, first 5 characters
@@ -42,6 +44,8 @@
     1. Repos have many commits but usually less tags
 1. **`git tag`** -> The output will be empty
 1. **`git tag -a 1.0 -m "Ready to deploy version"`**
+    1. Here the present tense format of the commits doesn't apply
+    1. Mention annotated and not annotated tags
 1. `git tag`
 1. `git log`
 1. If we wanna move the tag to a differnt commit, not the HEAD

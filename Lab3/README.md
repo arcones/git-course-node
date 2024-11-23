@@ -81,4 +81,4 @@
     1. main or master or trunk
     1. feature branches
     1. bugfix branches
-1. `git tag xxx`
+1. `git tag -a 1.0.0 -m "Calculator for integer numbers"
