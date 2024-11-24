@@ -32,8 +32,8 @@
     1. Explain command output
 
 ## Add all and unstage
-1. **`npm init`**
-1. **`npm install commander`**
+1. **`pnpm init`**
+1. **`pnpm install commander`**
 1. `git status`
 1. **`git add --all`**
     1. Best practices regarding `git add --all`
@@ -41,7 +41,7 @@
     1. [Docs](https://git-scm.com/docs/git-restore)
     1. Explain why this folder is not needed in .git
     1. Explain that depending on the project, some files are typically ignored
-1. `git commit -m "Add npm files"`
+1. `git commit -m "Add pnpm files"`
 1. `git status`
 1. **Create .gitignore and add "node_modules"**
     1. The `node_modules` folder doesn't appear anymore in status output
