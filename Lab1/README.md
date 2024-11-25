@@ -26,6 +26,7 @@
     1. When to do this command (After first commit, always before add!!)
     1. [Docs](https://git-scm.com/docs/git-diff)
 1. `git add README.md`
+1. `git commit -m "Add information to README.md"`
 1. `git status`
 1. **`git log`**
     1. [Docs](https://git-scm.com/docs/git-log)
