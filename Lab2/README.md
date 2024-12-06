@@ -13,7 +13,7 @@
 1. `git diff`
 1. `git commit -m "Update README.md"`
 1. `git log`
-1. **`git reset XXXX`** and tab button -> Go to the previous commit
+1. **`git reset XXXX`** and tab button -> Go to the previous commit, not to HEAD!!
     1. [Docs](https://git-scm.com/docs/git-reset)
     1. Explain HEAD concept
 1. `git log`
